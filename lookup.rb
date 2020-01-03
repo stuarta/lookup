@@ -20,7 +20,6 @@ class RemoteSSO
 
     get_client_credentials
     get_oauth_endpoints
-    create_client
   end
 
   def get_client_credentials
@@ -87,6 +86,7 @@ class RemoteSSO
   end
 
   def new_token
+    create_client
     access_token = @client.access_token!
     update_expiry(access_token)
     access_token
