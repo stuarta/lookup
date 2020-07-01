@@ -19,7 +19,7 @@ GEM
       aes_key_wrap
       bindata
     minitest (5.14.1)
-    rack (2.0.8)
+    rack (2.1.4)
     rack-oauth2 (1.10.1)
       activesupport
       attr_required
